@@ -1,5 +1,5 @@
 import React from 'react';
-
+import SearchBar from 
 
 const Main = () => {
 
@@ -7,7 +7,7 @@ const Main = () => {
     const [ weatherObj, setWeatherObj ] = useState(false);
 
     const getWeather = () => {
-        fetch(`http://api.weatherapi.com/v1/current.json?key=3f60da4d844e4b66ab2115419222403&q=${searchTerm}`
+        fetch(`http://api.weatherapi.com/v1/current.json?key=fcaf49d862694275809223551221408=${searchTerm}`
         ).then(json => {
             return json.json();
         }).then(data => {
@@ -16,7 +16,15 @@ const Main = () => {
     }
 
   return (
-    
+    <>
+        <div>
+            <SearchBar setSearchTerm={setSearchTerm} searchTerm={searchTerm}/>
+            <button onClick={getWeather}>Get Weather</button>
+        </div>
+        <div>
+            {weatherObj && <WeatherDisplay weatherObj={weatherObj} /> }
+        </div>
+    </>
   )
 }
 
