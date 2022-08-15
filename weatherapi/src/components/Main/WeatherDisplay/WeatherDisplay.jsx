@@ -5,8 +5,8 @@ import './WeatherDisplay.css';
 const WeatherDisplay = (props) => {
     const weatherObj = props.weatherObj;
 
-    const postWeather = () => {
-      fetch("http://localhost:8080/add", {
+    const postWeather = async () => {
+      fetch(`http://api.weatherapi.com/v1/current.json?key=fcaf49d862694275809223551221408&q=${postWeather}`, {
         method: "POST",
         headers: {
           'Accept': "application/JSON",
@@ -21,7 +21,7 @@ const WeatherDisplay = (props) => {
       })
     }
 
-    
+
     useEffect( () => {
         postWeather()
       },[weatherObj])
