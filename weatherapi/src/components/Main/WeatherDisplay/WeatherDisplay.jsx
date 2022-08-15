@@ -6,7 +6,7 @@ const WeatherDisplay = (props) => {
     const weatherObj = props.weatherObj;
 
     const postWeather = () => {
-      fetch("", {
+      fetch("http://localhost:8080/add", {
         method: "POST",
         headers: {
           'Accept': "application/JSON",
@@ -22,8 +22,8 @@ const WeatherDisplay = (props) => {
     }
 
     useEffect( () => {
-      postWeather()
-    },[weatherObj])
+        postWeather()
+      },[weatherObj])
 
   return (
     <div>WeatherDisplay</div>
