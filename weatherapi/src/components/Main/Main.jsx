@@ -38,7 +38,7 @@ const Main = () => {
 
   return (
     <>
-        <div>
+        <div className='searchBar'>
             <SearchBar setSearchTerm={setSearchTerm} searchTerm={searchTerm}/>
             <button onClick={getWeather}>Get Weather</button>
         </div>

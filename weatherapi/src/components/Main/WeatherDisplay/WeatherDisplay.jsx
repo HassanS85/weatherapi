@@ -6,7 +6,7 @@ const WeatherDisplay = (props) => {
     const weatherObj = props.weatherObj;
 
     const postWeather = async () => {
-      fetch(`http://api.weatherapi.com/v1/current.json?key=fcaf49d862694275809223551221408&q=${postWeather}`, {
+      fetch(`http://api.weatherapi.com/v1/current.json?key=fcaf49d862694275809223551221408&q=${weatherObj}`, {
         method: "POST",
         headers: {
           'Accept': "application/JSON",
