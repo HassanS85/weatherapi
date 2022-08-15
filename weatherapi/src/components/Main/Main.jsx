@@ -1,5 +1,6 @@
 import React from 'react';
-import SearchBar from 
+import SearchBar from './SearchBar/SearchBar';
+import WeatherDisplay from './WeatherDisplay/WeatherDisplay';
 
 const Main = () => {
 
