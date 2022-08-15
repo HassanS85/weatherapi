@@ -26,7 +26,12 @@ const WeatherDisplay = (props) => {
       },[weatherObj])
 
   return (
-    <div>WeatherDisplay</div>
+    <div className='weather-container'>
+        <h2>{weatherObj.location.name}</h2>
+        <p>{weatherObj.current.temp_c}&deg;C</p>
+        <img src={weatherObj.current.condition.icon} alt="Weather icon" />
+        <p>{weatherObj.current.condition.text}</p>
+    </div>
   )
 }
 
