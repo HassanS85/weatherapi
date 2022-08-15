@@ -21,6 +21,7 @@ const WeatherDisplay = (props) => {
       })
     }
 
+    
     useEffect( () => {
         postWeather()
       },[weatherObj])
