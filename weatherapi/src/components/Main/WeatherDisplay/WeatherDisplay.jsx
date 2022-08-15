@@ -2,7 +2,10 @@ import React from 'react'
 import './WeatherDisplay.css';
 
 
-const WeatherDisplay = () => {
+const WeatherDisplay = (props) => {
+
+
+    
   return (
     <div>WeatherDisplay</div>
   )
