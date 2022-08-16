@@ -7,6 +7,7 @@ const Main = () => {
     const [ searchTerm, setSearchTerm ] = useState("London");
     const [ weatherObj, setWeatherObj ] = useState(false);
 
+    
     const getWeather = async () => {
         fetch(`https://api.weatherapi.com/v1/current.json?key=fcaf49d862694275809223551221408&q=${searchTerm}`
         ).then(json => {
