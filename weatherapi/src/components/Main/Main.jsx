@@ -8,7 +8,7 @@ const Main = () => {
     const [ weatherObj, setWeatherObj ] = useState(false);
 
     const getWeather = async () => {
-        fetch(`http://api.weatherapi.com/v1/current.json?key=fcaf49d862694275809223551221408&q=${searchTerm}`
+        fetch(`https://api.weatherapi.com/v1/current.json?key=fcaf49d862694275809223551221408&q=${searchTerm}`
         ).then(json => {
             return json.json();
         }).then(data => {
