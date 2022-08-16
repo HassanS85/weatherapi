@@ -7,33 +7,33 @@ const Main = () => {
     const [ searchTerm, setSearchTerm ] = useState("London");
     const [ weatherObj, setWeatherObj ] = useState(false);
 
-    
-    const getWeather = async () => {
-        fetch(`https://api.weatherapi.com/v1/current.json?key=fcaf49d862694275809223551221408&q=${searchTerm}`
-        ).then(json => {
-            return json.json();
-        }).then(data => {
-            setWeatherObj(data);
-            console.log(data)
-        })
-    }
 
-// const getWeather = async () => {
-//     let headersList = {
-//         "Accept": "*/*",
-//         "User-Agent": "Thunder Client (https://www.thunderclient.com)"
-//        }
+    // const getWeather = async () => {
+    //     fetch(`https://api.weatherapi.com/v1/current.json?key=fcaf49d862694275809223551221408&q=${searchTerm}`
+    //     ).then(json => {
+    //         return json.json();
+    //     }).then(data => {
+    //         setWeatherObj(data);
+    //         console.log(data)
+    //     })
+    // }
+
+const getWeather = async () => {
+    let headersList = {
+        "Accept": "*/*",
+        "User-Agent": "Thunder Client (https://www.thunderclient.com)"
+       }
        
-//        let response = await fetch(`http://api.weatherapi.com/v1/current.json?key=fcaf49d862694275809223551221408&q=${searchTerm}`,
-//         { 
-//          method: "GET",
-//          headers: headersList
-//        });
+       let response = await fetch(`https://api.weatherapi.com/v1/current.json?key=fcaf49d862694275809223551221408&q=${searchTerm}`,
+        { 
+         method: "GET",
+         headers: headersList
+       });
        
-//        let data = await response.text();
-//        console.log(data);
+       let data = await response.text();
+       console.log(data);
        
-//     }
+    }
 
 
 
