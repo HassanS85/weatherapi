@@ -1,5 +1,5 @@
-.searchBar {
+.searchBar-container {
     padding: 10px;
     border: 10px red;
-    
+    background-color: beige;
 }

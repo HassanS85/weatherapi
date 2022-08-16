@@ -38,9 +38,9 @@ const Main = () => {
 
   return (
     <>
-        <div className='searchBar'>
+        <div className='searchBar-container'>
             <SearchBar setSearchTerm={setSearchTerm} searchTerm={searchTerm}/>
-            <button onClick={getWeather}>Get Weather</button>
+            <button className='searchBar-button' onClick={getWeather}>Get Weather</button>
         </div>
         <div>
             {weatherObj && <WeatherDisplay weatherObj={weatherObj} /> }

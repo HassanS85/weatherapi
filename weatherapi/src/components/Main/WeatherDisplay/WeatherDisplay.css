@@ -3,5 +3,8 @@
     justify-content: left;
     align-items: left;
     flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    background-color: beige;
 }
 

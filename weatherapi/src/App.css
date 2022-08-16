@@ -2,6 +2,21 @@
   text-align: center;
 }
 
+.searchBar-container {
+  padding: 10px;
+  border: 10px red;
+  background-color: green;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+searchBar-button
+
+
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
