@@ -10,7 +10,7 @@ const SearchBar = (props) => {
     }
 
   return (
-    <input onChange={updateValue} type="search" ></input>  
+    <input className='searchBox' onChange={updateValue} type="search" ></input>  
     )
 }
 
